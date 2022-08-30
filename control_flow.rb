@@ -1,16 +1,30 @@
 def admin_login(username, password)
-  # your code here
+  if username == 'admin' || 'ADMIN' && password = '12345'
+    puts 'Access granted'
+  else
+    puts 'Access denied'
 end
 
 def hows_the_weather(temperature)
-  # your code here
+  if temperature < 40 
+    puts "It's brisk out there!"
+    elsif temperature.between?(40, 60)  
+      puts "It's a little chilly out there! "
+    elsif temperature > 85
+      puts "It's too dang hot out there!"
+    else 
+      puts "It's perfect out there!"
 end
 
 def fizzbuzz(num)
-  # your code here
-end
+  if num % 3 == 0 && num % 5 == 0
+    puts 'FizzBuzz'
+    elsif num % 3 == 0 
+      puts 'Fizz'
+    elseif num % 5 == 0 
+    puts 'Buzz'
+    else 
+      puts num 
 
-def calculator(operation, num1, num2)
-  # your code here
 end
 
